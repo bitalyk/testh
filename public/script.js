@@ -1,3 +1,5 @@
+const puppeteer = require('puppeteer');
+
 // Function to run the Puppeteer script
 const runPuppeteerScript = async (url) => {
   try {
