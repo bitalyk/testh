@@ -45,9 +45,11 @@ const runPuppeteerScript = async (url) => {
   }
 };
 
-// Get URL from command-line arguments
-const args = process.argv.slice(2);
-const pageUrl = args[0];
+  // Get the URL of the current page
+    const currentUrl = window.location.href;
+    
+    // Display the URL in the paragraph with id 'urlDisplay'
+    document.getElementById('urlDisplay').textContent = currentUrl;
 
 // Run the script with the provided URL
 runPuppeteerScript(pageUrl);
